@@ -1,6 +1,17 @@
 # XPS-9560-Linux-WiFi-Intel-8265
 
-Looks like this config works. Linux Mint 18.2.
+I was able to make it work using:
+```
+options iwlwifi bt_coex_active=0
+options iwlwifi swcrypto=1
+options iwlwifi power_save=1
+options iwlwifi 11n_disable=1
+```
+
+Personally, I think `11n_disable` has done the job.
+
+
+Looks like this config works. Linux Mint 18.2 - *only when network usage is really low*.
 ```
 ➜  ~ uname -r
 4.8.0-58-generic
