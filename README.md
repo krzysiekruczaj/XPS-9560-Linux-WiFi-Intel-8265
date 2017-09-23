@@ -10,7 +10,7 @@ options iwlwifi 11n_disable=1
 
 Personally, I think `11n_disable` has done the job.
 
-
+# Depracated
 Looks like this config works. Linux Mint 18.2 - *only when network usage is really low*.
 ```
 ➜  ~ uname -r
